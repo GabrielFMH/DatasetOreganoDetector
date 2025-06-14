@@ -1,13 +1,12 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+# Ruta al directorio raíz del dataset. ¡Asegúrate de que esta ruta sea correcta!
+path: /content/oregano_detector_dataset/
 
-nc: 2
-names: ['Oregano', 'Plant']
+# Rutas a las carpetas de imágenes de entrenamiento y validación (relativas a 'path')
+train: images/train
+val: images/val
 
-roboflow:
-  workspace: capstone-2-herbal-plants-detection
-  project: oregano
-  version: 5
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/capstone-2-herbal-plants-detection/oregano/dataset/5
+# Nombres de las clases, en el orden de sus IDs
+# El ID 0 corresponde al primer nombre, el ID 1 al segundo, y así sucesivamente.
+names:
+  0: oregano
+  1: no_oregano
