@@ -2,8 +2,8 @@ train: ../train/images
 val: ../valid/images
 test: ../test/images
 
-nc: 2
-names: ['Oregano', 'Plant']
+names:
+  - oregano 
 
 roboflow:
   workspace: capstone-2-herbal-plants-detection
